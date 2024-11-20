@@ -1,0 +1,175 @@
+/* Header */
+nav 
+{
+    width: 100%;
+    height: 6;
+    background: #01aea694;
+}
+ 
+nav .main_pages 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ 
+nav .main_pages a 
+{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+ 
+nav a:hover 
+{
+    background: #01aea694
+}
+label, #toggle
+{
+    display: none;
+}
+ 
+@media all and (max-width: 991px)
+{
+    nav
+    {
+        height: 60px;
+    }
+ 
+    nav .main_pages 
+    {
+        display: none;
+        flex-direction: column;
+        background: #01aea694;
+        height: 220px;
+    }
+ 
+    nav .main_pages a {
+        width: 50%;
+    }
+ 
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+ 
+    #toggle:checked + .main_pages {
+        display: flex;
+    }
+}
+p{
+  color: white;
+  font-family: "Playwrite MX", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Vast Shadow", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h2 {
+      font-family: "Aboreto", system-ui;
+      font-weight: 400;
+      font-style: normal;
+      color: white;
+    }
+  /*background*/
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+     }
+ /* footer */
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5em;
+  background-color: rgba(0, 125, 156, 0.493);
+  color: rgb(247, 247, 247);
+  margin-top: 3em;
+  text-decoration: none;
+}
+a{text-decoration: none;}
+/* From Uiverse.io by andrew-demchenk0 */ 
+.feed-form {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  .feed-form input {
+    height: 54px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.62);
+    margin-bottom: 15px;
+    border: none;
+    padding: 0 20px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #4B4B4B;
+  }
+  
+  .button_submit:hover, .feed-form input:hover {
+    transform: scale(1.009);
+    box-shadow: 0px 0px 3px 0px #212529;
+  }
+  
+  .button_submit {
+    width: 100%;
+    height: 54px;
+    font-size: 14px;
+    color: white;
+    background: rgba(0, 251, 255, 0.705);
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .contact{
+    display: flex;
+    justify-content: center;
+    margin-top: 8.5em;
+  }
+  @media screen and (max-width:768px) and (min-width: 320px) {
+    .Home{
+        display: none;
+     }
+     .nekfeu{
+        display: none;
+     }
+     .luther{
+        display: none;
+     }
+     footer{
+      flex-wrap: wrap;
+      height: 15em;
+   }
+}
+@media screen and (min-width: 769px) {
+    .menu{
+        display: none;
+    }
+}

@@ -1,0 +1,243 @@
+/* Header */
+nav 
+{
+    width: 100%;
+    height: 6;
+    background: #01aea694;
+}
+ 
+nav .main_pages 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ 
+nav .main_pages a 
+{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+ 
+nav a:hover 
+{
+    background: #01aea694
+}
+label, #toggle
+{
+    display: none;
+}
+ 
+@media all and (max-width: 991px)
+{
+    nav
+    {
+        height: 60px;
+    }
+ 
+    nav .main_pages 
+    {
+        display: none;
+        flex-direction: column;
+        background: #01aea694;
+        height: 220px;
+    }
+ 
+    nav .main_pages a {
+        width: 50%;
+    }
+ 
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+ 
+    #toggle:checked + .main_pages {
+        display: flex;
+    }
+}
+p{
+  color: white;
+  font-family: "Playwrite MX", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Vast Shadow", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h2 {
+      font-family: "Aboreto", system-ui;
+      font-weight: 400;
+      font-style: normal;
+      color: white;
+    }
+/* footer */
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5em;
+  background-color: rgba(0, 125, 156, 0.493);
+  color: rgb(247, 247, 247);
+  margin-top: 28em;
+  text-decoration: none;
+}
+a{text-decoration: none;}
+/*Background*/
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+   }
+   /*Taille des images*/
+   img{
+    width: 75%;
+    height: 75%;
+   }
+   /*entiereté du body*/
+   .all{
+    display: flex;
+    justify-content: center;
+    margin-left: 4em;
+    margin-top: 7em;
+   }
+   h3{
+    color: bisque;
+   }
+   .wood{
+    padding-left: 2em;
+   }
+   .caritatif{
+    padding-left: 2em;
+   }
+   /*Video*/
+   .video iframe {
+    left:0;
+    top:0;
+    height:50%;
+    width:50%;
+    position:absolute;
+    margin-left: 22em;
+    margin-top: 35em;
+   }
+/*Format telephone*/
+@media screen and (max-width:768px) and (min-width: 320px) {
+  #background-video {
+      width: 200vw;
+      height: 300vh;
+      object-fit: cover;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+       }
+       .presentation{
+          display: flex;
+          flex-wrap: wrap;
+       }
+       .album{
+          display: flex;
+          flex-wrap: wrap;
+       }
+       h1{
+          font-size: 5em;
+       }
+       img{
+          width: 10em;
+          height: 15em;
+       }
+       .Home{
+          display: none;
+       }
+       .nekfeu{
+          display: none;
+       }
+       .luther{
+          display: none;
+       }
+       .all{
+        display: flex;
+        flex-wrap: wrap;
+       }
+       .Wood{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 5em;
+       }
+       .caritatif{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 5em;
+        padding-left: 0;
+       }
+       .fil{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 5em;
+       }
+       .video iframe {
+        left:0;
+        top:0;
+        height:70%;
+        width:70%;
+        position:absolute;
+        margin-left: 3em;
+        margin-top: 75em;
+       }
+       footer{
+        flex-wrap: wrap;
+        height: 15em;
+        margin-top: 35em;
+     }
+}
+/*Format de tablette*/
+@media screen and (min-width: 769px) and (max-width: 1439px) {
+  #background-video {
+      width: 250vw;
+      height: 350vh;
+      object-fit: cover;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+       }
+       .feu {
+          padding-right: 4em;
+      }
+      .etoile-vaga{
+          padding-left: 4em;
+      }
+}
+/*Format de pc*/
+@media screen and (min-width: 769px) {
+      .menu{
+          display: none;
+      }
+}

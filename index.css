@@ -1,0 +1,87 @@
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2017/10/06/15/33/star-2823526_1280.jpg) ;
+    background-repeat: none;
+}
+.marge {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal; 
+}
+.marge p{
+    padding-top: 5%;
+    font-size: 150%;
+}
+a{
+    color:white;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.Nekfeu {
+    background-color: #C6430F;
+    
+}
+.Luther {
+    background-color: #DC77AB;
+    
+}
+/* Réinitialisation des marges et padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+.box1{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 45px;
+    text-align: end;
+}
+.box2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    padding-bottom: 45px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+h1{
+    font-family: "Piedra", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 400%;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 3px;
+}
+h2{
+    font-family: "Sirin Stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 172%;
+}
+h3{
+    font-family: "Syne Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+}
+p{
+    font-family: "Meera Inimai", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
